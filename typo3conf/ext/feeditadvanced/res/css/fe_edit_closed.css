@@ -1,0 +1,31 @@
+div#feEditAdvanced-menuBar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	z-index: 8000;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 90%;
+}
+
+div#feEditAdvanced-menuBar a.feEditAdvanced-smallButton {
+	color: #eee;
+	background: url(../icons/menubar/button_small.png) no-repeat 0 0;
+	margin: 4px 8px 0 0;
+	padding: 0;
+	width: 70px;
+	line-height: 20px;
+	height: 20px;
+	font-size: 10px;
+
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	float: right;
+}
+
+div#feEditAdvanced-menuBar a.feEditAdvanced-smallButton:hover { color: #fff; }

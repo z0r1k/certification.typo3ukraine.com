@@ -1,0 +1,21 @@
+# Expires Header + Removal of ETag
+<FilesMatch "\.(ico|png|gif|js|css|jpg|jpeg|swf)">
+	<IfModule mod_expires.c>
+		ExpiresActive on
+		ExpiresDefault "access plus 7 days"
+	</IfModule>
+
+	# ETag
+	FileETag MTime Size
+	<IfModule mod_headers.c>
+		FileETag none
+		Header unset Last-Modified
+	</IfModule>
+</FilesMatch>
+
+# Compressed Content
+<FilesMatch "\.gz\.(js|css)">
+	<IfModule mod_headers.c>
+		Header set Content-Encoding gzip
+	</IfModule>
+</FilesMatch>

@@ -1,0 +1,146 @@
+2008-09-15	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Added extension updater
+	* Fixed missing </head> in the template
+	* Released version 1.1.1
+
+2008-09-01	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Fixed: wrong check for missing TS template
+	* Removed duplicate $cObj from pi1 class
+	* Removed restriction to TYPO3 4.2 as highest TYPO3 version
+
+2008-08-30 Martin Holtz <typo3@martinholtz.de>
+
+	* Fixed bug #1150: incorrect sql with emptySearchAtStart
+
+2008-02-29  Michiel Roos  <extensions@netcreators.com>
+
+	* Fixed bug #8122: Toogle doesn't work
+
+2008-02-25	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Renamed JavaScript functions to have extension id as prefix
+	* Moved all inline CSS styles to CSS classes
+	* Changed expand/collapse in dynamic view to use CSS classes instead of inline style (to be print-friendly)
+	* Commented obsolete TS template named "CSS default styles"
+	* Fixed icon paths: did not expand from constants at some TYPO3 installations
+	* Added hook to page module to display extended information (TYPO3>=4.2)
+
+2008-02-22	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Added posibility to override sys_language_mode/sys_language_overlay for records
+
+2008-02-01	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Changed localization to use content.sys_language_overlay option correctly
+	* Updated documentation
+
+2008-01-31	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Changed to use ratings extension instead of built-in rated feature
+	* Changed inclusion of the plugin to show error message if TS template is not included
+	* Initial work on localization feature
+
+2008-01-19	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Committed some fies for ratings feature
+	* Changed TYPO3 logo in the manual
+
+2007-12-14	Patrick Broens	<patrick@netcreators.com>
+
+	* Moved icons to folder 'res'
+	* Removed addPItoST43 method and moved constants and setup to static template list
+	* Deleted old unused files
+	* Moved flexform.xml into own folder
+	* Splitted TCA files for each table and moved to TCA folder
+
+2007-12-10	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Added ratings
+
+2007-12-07	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Language files moved to translation server
+
+2007-12-06	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Fixed bug #2225: Labels cannot be overriden via TS
+	* Fixed bug #5219: invalid attribute in javascript
+	* Fixed bug #4642: Wrong syntax in static template
+
+2007-10-01	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Fixed: "Show all" did not expand all items
+	* Fixed: FireFox displayed collapsed FAQs with indent if CSS styled content is used
+
+2007-09-26	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Related FAQs are now shown in single view
+
+2007-09-26	Dmitry Dulepov	<dmitry@typo3.org>
+
+	* Added related and related_links field to tx_irfaq_q table
+	* Added TCEmain hook to handle bidirectional relations between FAQ items
+	* Added displaying of related and related_links fields
+	* Documentation updated to list new stdWrap entries for related items
+
+2006-11-08  Patrick Broens  <patrick@netcreators.com>
+	+ Added a language label for show/hide all
+
+2006-10-27  Patrick Broens  <patrick@netcreators.com>
+	~ CSS-styles in static template instead of standard typoscript
+	~ Locallang files to XML
+
+2006-10-24  Patrick Broens  <patrick@netcreators.com>
+
+	~ The answer string was not processed correctly with the parseFunc function from tslib_cObj based on configuration set in "lib.parseFunc_RTE" in the current TypoScript template.
+
+2005-10-24  Ingo Renner  <typo3@ingo-renner.com>
+
+	* FIX fixed bug with category selector, now using cHash. Thanks to Benjamin A. Schmit
+
+2005-10-19  Ingo Renner  <typo3@ingo-renner.com>
+
+	* FIX rendering now works like regular content elements
+
+2005-09-30  Ingo Renner  <typo3@ingo-renner.com>
+
+	* ADD added italian translation
+
+2005-07-18  Ingo Renner  <typo3@ingo-renner.com>
+
+	* FIX fixed bug which resulted in a SQL error when retrieving questions from more than one page
+
+2005-05-20  Ingo Renner  <typo3@ingo-renner.com>
+
+	* CHG XHTML Strict compliant
+
+2005-04-08  Ingo Renner  <typo3@ingo-renner.com>
+
+	* CHG Removed all "unsigned" keywords from ext_tables.sql
+
+2005-02-20 Ingo Renner <typo3@ingo-renner.com>
+	* FIX small bug when using multiple instances of irfaq on one page
+
+2005-02-20 Ingo Renner <typo3@ingo-renner.com>
+	* ADD asked by field
+	* ADD category text modes
+	* FIX RTE transformations now working
+	* CHG manual updated
+	* CHG default css
+	* CHG default template
+	* CHG TCE Forms now use labels of EXT:lang where appropriate
+	* code clean up
+
+
+2005-02-15 Ingo Renner <typo3@ingo-renner.com>
+
+	* ADD dutch translation
+	* ADD category selection by GET vars
+	* ADD show/hide all function
+	* ADD show only one FAQ at a time mode
+	* FIX sorting of categories and questions
+	* CHG Manual
+	* CHG default CSS
+	* Thanks a lot to Ben van't Ende and Rupert Germann for helping out with ideas and programming!!

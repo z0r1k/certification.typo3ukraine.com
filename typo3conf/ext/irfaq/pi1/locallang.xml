@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description></description>
+        <type>module</type>
+        <csh_table></csh_table>
+        <fileId>EXT:irfaq/pi1/locallang.xml</fileId>
+        <labelContext type="array">
+        </labelContext>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="fold_faq">fold faq</label>
+            <label index="text_expert">Expert:</label>
+            <label index="text_category">Category: </label>
+            <label index="text_asked_by">Question asked by: </label>
+            <label index="text_show">Show all</label>
+            <label index="text_hide">Hide all</label>
+            <label index="text_related_faq">Related entries:</label>
+            <label index="text_related_links">Related links:</label>
+            <label index="searchButtonLabel">Search</label>
+            <label index="noSuchEntry">Sorry, could not find such FAQ entry.</label>
+            <label index="back">Go back</label>
+			<label index="no_ts_template">Error (irfaq): extension's TypoScript template is not included. Please, go to Web&gt;Template and fix this error</label>
+        </languageKey>
+    </data>
+    <orig_hash type="array">
+        <languageKey index="default" type="array">
+            <label index="fold_faq" type="integer">123277502</label>
+            <label index="text_expert" type="integer">174458476</label>
+            <label index="text_category" type="integer">215026594</label>
+            <label index="text_asked_by" type="integer">221518685</label>
+        </languageKey>
+    </orig_hash>
+    <orig_text type="array">
+        <languageKey index="default" type="array">
+        </languageKey>
+    </orig_text>
+</T3locallang>

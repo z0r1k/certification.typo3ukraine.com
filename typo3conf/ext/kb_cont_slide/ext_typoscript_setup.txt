@@ -1,0 +1,12 @@
+
+plugin.tx_kbcontslide_pi1 {
+  content = CONTENT
+  content {
+    table = tt_content
+    select {
+      pidInList = this
+      where = colPos=0
+		orderBy = sorting
+    }
+  }
+}
